@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/cl1"
+    tools:context=".ConstriantLayoutWithJava">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shaikh Nadim 58"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="@id/cl1"
+        app:layout_constraintEnd_toEndOf="@id/cl1"
+        android:layout_marginBottom="300dp"/>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Enter Your Name"
+        android:id="@+id/get_name"
+        app:layout_constraintStart_toStartOf="@id/cl1"
+        app:layout_constraintTop_toTopOf="@id/cl1"
+        android:layout_marginTop="100dp"/>
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/get_age"
+        android:hint="Enter Your Age"
+        app:layout_constraintTop_toTopOf="@id/cl1"
+        app:layout_constraintLeft_toRightOf="@id/get_name"
+        android:layout_marginTop="100dp"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GET DETAILS"
+        android:id="@+id/get_detail"
+        app:layout_constraintTop_toBottomOf="@id/get_name"
+        android:layout_marginTop="20dp"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:hint="Display Details...."
+        app:layout_constraintTop_toBottomOf="@id/get_detail"
+        android:layout_marginTop="20dp"
+        android:id="@+id/dispaly_data"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

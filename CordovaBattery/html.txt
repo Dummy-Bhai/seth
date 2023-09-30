@@ -1,0 +1,7 @@
+ <body>
+        <div class="deviceready">
+            <p style="font-size: large;">Shaikh Nadim KSBSCIT058</p>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/first.js"></script>
+    </body>

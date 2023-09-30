@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RelativeLayoutWithJava">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Shaikh Nadim 58"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:textSize="30dp"
+        android:layout_marginTop="60dp"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/r1"
+        android:layout_marginTop="200dp"
+        android:layout_centerInParent="true">
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Name"
+            android:id="@+id/get_name"/>
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="Enter Your Age"
+            android:layout_toEndOf="@+id/get_name"
+            android:id="@+id/get_age"
+            android:inputType="number"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/r1"
+        android:id="@+id/r2"
+        android:layout_marginTop="10dp"
+        android:layout_centerInParent="true">
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="GET DETAILS"
+            android:id="@+id/get_detail"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="20dp"
+            android:layout_below="@+id/get_detail"
+            android:hint="Display Details...."
+            android:id="@+id/dispaly_data"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,47 @@
+<ion-content>
+    <ion-item>
+        <h1 style="text-align: center;">Shaikh Nadim KSBSCIT058</h1>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">ID:</ion-label>
+        <ion-input type="text" class="id" name="id" [(ngModel)]="r.id"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">NAME:</ion-label>
+        <ion-input type="text" name="name" [(ngModel)]="r.name" ></ion-input>
+    </ion-item>
+    <ion-radio-group [(ngModel)]="r.gender">
+        <ion-radio value="male">MALE</ion-radio><br/>
+        <ion-radio value="female">FEMALE</ion-radio><br />
+        <ion-radio value="other">OTHER</ion-radio><br />
+    </ion-radio-group>
+    <ion-item>
+        <ion-select label="City" [(ngModel)]="r.city">
+          <ion-select-option value="Mumbai">MUMBAI</ion-select-option>
+          <ion-select-option value="Pune">PUNE</ion-select-option>
+          <ion-select-option value="Delhi">DELHI</ion-select-option>
+        </ion-select>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">PHONE NUMBER:</ion-label>
+        <ion-input type="PHONE" name="phone" [(ngModel)]="r.phone"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">EMAIL:</ion-label>
+        <ion-input type="email" name="email" [(ngModel)]="r.email"></ion-input>
+    </ion-item>
+    <ion-item>
+        <ion-label color="primary">ADDRESS:</ion-label>
+        <ion-input type="address" name="address" [(ngModel)]="r.address"></ion-input>
+    </ion-item>
+    <ion-button (click)="onRegister()">Register</ion-button>
+    <ion-item>
+        <ion-checkbox value="A" [(ngModel)]="r.A"  >A</ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-checkbox value="B" [(ngModel)]="r.B" >B</ion-checkbox>
+    </ion-item>
+    <ion-item>
+        <ion-checkbox value="C" [(ngModel)]="r.C" >C</ion-checkbox>
+    </ion-item>
+</ion-content>

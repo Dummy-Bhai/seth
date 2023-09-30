@@ -1,0 +1,15 @@
+document.addEventListener("deviceready", onDeviceReady, false);  
+function onDeviceReady() {  
+    document.getElementById("clickme").addEventListener("click",onClick,false);
+} 
+function onClick(){
+    var n1=document.getElementById("n1").value ;
+    var n2 = document.getElementById('n2').value;
+    var add = parseInt(n1) +parseInt (n2);
+    var sub = parseInt(n1) -parseInt (n2);
+    var mul = parseInt(n1) *parseInt (n2);
+    var div = parseInt(n1) /parseInt (n2);
+
+    document.getElementById("result").innerHTML='<p>The addition is '+add+'</p><br><p>The subtraction is '+sub+"</p><br><p>The multiplication is "+mul+"</p><br><p> The division is "+div+'</p>';
+}
+

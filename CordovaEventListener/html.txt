@@ -1,0 +1,7 @@
+ <body>
+        <div class="deviceready">
+        <button id="clickme" style="margin: 100px;">Click Me</button>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/first.js"></script>
+    </body>

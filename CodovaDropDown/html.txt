@@ -1,0 +1,16 @@
+<body>
+        <div class="deviceready">
+            <p style="font-size: large;">Shaikh Nadim KSBSCIT058</p>
+            <select name="fruit" id="fruit">
+                <option value="Mango">Mango</option>
+                <option value="Apple">Apple</option>
+                <option value="Banana">Banana</option>
+                <option value="Chiko">Chiko</option>
+                <option value="Graphes">Graphes</option>
+                <option value="Liche">Liche</option>
+            </select>
+            <button id="btn">Get</button>
+        </div>
+        <script src="cordova.js"></script>
+        <script src="js/first.js"></script>
+    </body>

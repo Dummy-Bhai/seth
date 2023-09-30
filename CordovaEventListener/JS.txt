@@ -1,0 +1,7 @@
+document.addEventListener("deviceready", onDeviceReady, false);  
+function onDeviceReady() {  
+    document.getElementById("clickme").addEventListener("click",onStart,false);
+} 
+function onStart(){
+    alert("Shaikh Nadim KSBSCIT058 \nButton Clicked!!!");
+}

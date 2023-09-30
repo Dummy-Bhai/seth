@@ -1,0 +1,9 @@
+document.addEventListener("deviceready", onDeviceReady, false);  
+function onDeviceReady() {  
+    document.getElementById("btn").addEventListener("click",onClick,false);
+} 
+
+function onClick(){
+    var a=document.getElementById("fruit").value ;
+    alert("The selected option is "+a);
+}
